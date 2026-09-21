@@ -723,11 +723,6 @@
 				background-color: var(--dark);
 			}
 
-			.cs-logo {
-				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
-			}
-
 			.cs-toggle {
 				background-color: var(--secondary);
 			}
@@ -1113,11 +1108,6 @@
 	body.dark-mode {
 		#cs-navigation {
 			background-color: var(--dark);
-
-			.cs-logo {
-				/* turns it white */
-				filter: grayscale(1) brightness(1000%);
-			}
 
 			.cs-li-link,
 			.cs-phone {
