@@ -9,11 +9,13 @@
 			navigation: "#cs-navigation",
 			hamburger: "#cs-navigation .cs-toggle",
 			menuWrapper: "#cs-ul-wrapper",
+			dropdownToggles: ".cs-dropdown-toggle",
 		},
 		CLASSES: {
 			active: "cs-active",
 			menuOpen: "cs-open",
 			scroll: "scroll",
+			dropdown: "cs-dropdown",
 		},
 	};
 
@@ -51,6 +53,30 @@
 			}
 		},
 	};
+
+// Dropdown Management
+const dropdownManager = {
+    toggle(toggleButton) {
+        if (!isMobile()) return; // desktop uses CSS :hover, skip JS entirely
+
+        const dropdown = toggleButton.closest(`.${CONFIG.CLASSES.dropdown}`);
+        if (!dropdown) return;
+
+        const isOpen = dropdown.classList.contains(CONFIG.CLASSES.active);
+
+        // Close any other open dropdowns first
+        document.querySelectorAll(`.${CONFIG.CLASSES.dropdown}.${CONFIG.CLASSES.active}`).forEach((d) => {
+            if (d !== dropdown) {
+                d.classList.remove(CONFIG.CLASSES.active);
+                const btn = d.querySelector(CONFIG.SELECTORS.dropdownToggles);
+                if (btn) btn.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        dropdown.classList.toggle(CONFIG.CLASSES.active, !isOpen);
+        toggleButton.setAttribute("aria-expanded", String(!isOpen));
+    },
+};
 
 	// Keyboard Management
 	const keyboardManager = {
@@ -104,6 +130,16 @@
 				if (e.target === elements.navigation && elements.navigation.classList.contains(CONFIG.CLASSES.active)) {
 					menuManager.toggle();
 				}
+			});
+
+			// Dropdown menus (mobile tap)
+			document.querySelectorAll(CONFIG.SELECTORS.dropdownToggles).forEach((toggle) => {
+				toggle.addEventListener("click", (e) => {
+					if (isMobile()) {
+						e.preventDefault();
+						dropdownManager.toggle(toggle);
+					}
+				});
 			});
 
 			// Global events
