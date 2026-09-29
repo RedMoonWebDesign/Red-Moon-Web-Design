@@ -14,9 +14,9 @@
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
 		--primary: #aa372f;
-		--primaryLight: #f05e54;
-		--secondary: #f05e54;
-		--secondaryLight: #ffba43;
+		--primaryLight: #df5248;
+		--secondary: #df5248;
+		--secondaryLight: #eb9d28;
 		--headerColor: #0f0f0f;
 		--bodyTextColor: #4e4b66;
 		--bodyTextColorWhite: #fafbfc;
@@ -1228,6 +1228,7 @@
 			align-items: center;
 			/* 48px - 64px */
 			gap: clamp(3rem, 6vw, 4rem);
+			padding-bottom: 14vw;
 		}
 
 		.cs-content {
@@ -1271,7 +1272,7 @@
 				height: 100%;
 				width: 100%;
 				background: #000;
-				opacity: 0.8;
+				opacity: 0.7;
 				top: 0;
 				left: 0;
 				z-index: 1;
@@ -1288,241 +1289,290 @@
 		}
 	}
 }
-
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0px) {
-	#cs-footer-275 {
-		padding: var(--sectionPadding);
-		background-color: #02030f;
+@media only screen and (min-width: 0rem) {
+    #cs-footer-842 {
+        padding: var(--sectionPadding);
+        /* 30px - 50px */
+        padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+        background-color: var(--dark);
+        position: relative;
 
-		.cs-container {
-			width: 100%;
-			/* reset on tablet */
-			max-width: calc(550 / 16 * 1rem);
-			margin: auto;
-			display: flex;
-			justify-content: flex-start;
-			align-items: flex-start;
-			flex-wrap: wrap;
-			column-gap: calc(88 / 16 * 1rem);
-			row-gap: calc(32 / 16 * 1rem);
-		}
-
-		.cs-logo-group {
-			/* takes up all the space, lets the other ul's wrap below it */
-			width: 100%;
-			position: relative;
-		}
-
-		.cs-logo {
-			/* 210px - 240px */
-			width: clamp(13.125rem, 8vw, 15rem);
-			height: auto;
-			display: block;
-			/* 28px - 44px */
-			margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
-		}
-
-		.cs-logo-img {
-			width: 100%;
-			height: auto;
-
-			&.dark {
-				display: none;
-			}
-		}
-
-		.cs-text {
+		.cs-text { 
 			color: var(--bodyTextColorWhite);
-			margin-bottom: calc(16 / 16 * 1rem);
+
 		}
+		
+        .cs-wave {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0;
+            bottom: 99%;
+        }
 
-		.cs-social {
-			display: inline-flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			gap: calc(12 / 16 * 1rem);
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
+        .cs-container {
+            width: 100%;
+            /* reset on tablet */
+            max-width: calc(550/16 * 1rem);
+            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            column-gap: calc(48/16 * 1rem);
+            row-gap: calc(32/16 * 1rem);
+        }
 
-		.cs-social-link {
-			width: calc(24 / 16 * 1rem);
-			height: calc(24 / 16 * 1rem);
-			background-color: #4e4b66;
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: relative;
-			z-index: 1;
-			transition: transform 0.3s, background-color 0.3s;
+        .cs-logo-group {
+            /* takes up all the space, lets the other ul's wrap below it */
+            width: 100%;
+            position: relative;
+        }
 
-			&:hover {
-				background-color: #1a1a1a;
-				transform: translateY(-0.1875rem);
-			}
-		}
+        .cs-logo {
+            width: calc(210/16 * 1rem);
+            height: auto;
+            margin: 0 0 calc(24/16 * 1rem) 0;
+            display: block;
+        }
 
-		.cs-social-img {
-			height: calc(13 / 16 * 1rem);
-			width: auto;
-			display: block;
-		}
+        .cs-logo-img {
+            width: 100%;
+            height: auto;
+        }
+        .cs-social {
+            display: inline-flex;
+            justify-content: flex-start;
+            gap: calc(12/16 * 1em);
+        }
 
-		/* Navigation Links */
-		.cs-nav {
-			padding: 0;
-			margin: 0;
-		}
+        .cs-social-link {
+            width: calc(32/16 * 1rem);
+            height: calc(32/16 * 1rem);
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            transition:
+                transform 0.3s,
+                background-color 0.3s;
 
-		.cs-nav-li {
-			list-style: none;
-			margin-bottom: calc(16 / 16 * 1rem);
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-		}
+            &:hover {
+                background-color: var(--primaryLight);
+                transform: translateY(-0.1875rem);
 
-		.cs-header {
-			font-size: calc(16 / 16 * 1rem);
-			line-height: 1.5em;
-			font-weight: 700;
-			color: var(--bodyTextColorWhite);
-			position: relative;
+                .cs-social-img {
+                    filter: grayscale(1) brightness(1000%);
+                }
+            }
+        }
 
-			&:after {
-				content: "";
-				width: calc(32 / 16 * 1rem);
-				height: calc(4 / 16 * 1rem);
-				margin: calc(16 / 16 * 1rem) auto calc(24 / 16 * 1rem) 0;
-				background: var(--primary);
-				opacity: 1;
-				position: relative;
-				display: block;
-			}
-		}
+        .cs-social-img {
+            height: calc(12/16 * 1rem);
+            width: auto;
+            display: block;
+        }
 
-		.cs-nav-link {
-			font-size: calc(16 / 16 * 1rem);
-			text-decoration: none;
-			line-height: 1.5em;
-			color: var(--bodyTextColorWhite);
-			position: relative;
+        .cs-header {
+            font-size: calc(20/16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 700;
+            margin: 0 0 calc(20/16 * 1rem) 0;
+            color: var(--bodyTextColorWhite);
+            display: block;
+            position: relative;
+        }
 
-			&:before {
-				/* underline */
-				content: "";
-				width: 0%;
-				height: calc(2 / 16 * 1rem);
-				background: var(--bodyTextColorWhite);
-				opacity: 1;
-				position: absolute;
-				display: block;
-				bottom: calc(-2 / 16 * 1rem);
-				left: 0;
-				transition: width 0.3s;
-			}
+        .cs-ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: calc(12/16 * 1rem);
+        }
 
-			&:hover {
-				&:before {
-					width: 100%;
-				}
-			}
-		}
+        .cs-ul-1 {
+            width: 100%;
+            max-width: calc(350/16 * 1rem);
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: calc(32/16 * 1rem);
 
-		/* Contact Links */
-		.cs-contact {
-			margin: 0;
-			padding: 0;
-			width: 35%;
-		}
+            .cs-li {
+                width: 44%;
+            }
+        }
 
-		.cs-contact-li {
-			list-style: none;
-			margin-bottom: calc(0 / 16 * 1rem);
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-		}
+        .cs-li {
+            list-style: none;
+        }
 
-		.cs-contact-link {
-			font-size: calc(16 / 16 * 1rem);
-			text-decoration: none;
-			line-height: 1.5em;
-			text-align: left;
-			color: var(--bodyTextColorWhite);
-			display: inline-block;
+        .cs-link {
+            font-size: calc(16/16 * 1rem);
+            text-decoration: none;
+            line-height: 1.5em;
+            text-align: left;
+            color: #bababa;
+            display: inline-flex;
+            align-items: flex-start;
+            gap: calc(8/16 * 1rem);
+            transition: color 0.3s;
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
+            &:hover {
+                color: var(--primaryLight);
+            }
+        }
 
-		.cs-address {
-			font-size: calc(16 / 16 * 1rem);
-			margin-bottom: calc(20 / 16 * 1rem);
-		}
-	}
+        .cs-icon {
+            width: calc(20/16 * 1rem);
+            height: auto;
+            margin-right: calc(2/16 * 1rem);
+            display: block;
+        }
+
+        .cs-bottom {
+            text-align: center;
+            width: 100%;
+            max-width: calc(1280/16 * 1rem);
+            /* 48px - 64px */
+            margin: clamp(3rem, 7vw, 4rem) auto 0;
+            padding-top: calc(24/16 * 1rem);
+            border-top: 1px solid #484848;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: calc(12/16 * 1rem);
+        }
+
+        .cs-credit,
+        .cs-bottom-link,
+        .cs-credit-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            width: auto;
+            margin: 0;
+            color: #bababa;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .cs-credit {
+            width: 100%;
+        }
+
+        .cs-credit-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            width: auto;
+            margin: 0;
+            color: #bababa;
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        .cs-bottom-links {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-bottom-link {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: var(--primary);
+            }
+
+            &:last-of-type {
+                &:before {
+                    /* seperator */
+                    content: "";
+                    width: 1px;
+                    height: calc(14/16 * 1rem);
+                    margin: 0 calc(12/16 * 1rem);
+                    background: currentColor;
+                    opacity: 1;
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-	#cs-footer-275 {
-		.cs-container {
-			max-width: calc(1280 / 16 * 1rem);
-			row-gap: 0;
-		}
+    #cs-footer-842 {
+        .cs-container {
+            max-width: calc(1280/16 * 1rem);
+            /* 48px - 64px */
+            row-gap: clamp(3rem, 7vw, 4rem);
+        }
 
-		.cs-contact {
-			flex-direction: row;
-			justify-content: space-between;
-			border-top: none;
-		}
+        .cs-bottom {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
 
-		.cs-contact-li {
-			margin: 0;
-		}
-	}
+        .cs-credit {
+            text-align: left;
+        }
+
+        .cs-bottom-links {
+            justify-content: flex-end;
+        }
+    }
 }
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-	#cs-footer-275 {
-		.cs-container {
-			/* pushes all flex children to the top */
-			align-items: flex-start;
-			justify-content: flex-end;
-		}
+    #cs-footer-842 {
+        .cs-container {
+            /* pushes all flex children to the top */
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
 
-		.cs-logo-group {
-			/* pushes everything to the right of it as far as possible in a flexbox */
-			margin-right: auto;
-			width: auto;
-			max-width: calc(305 / 16 * 1rem);
-		}
+        .cs-logo-group {
+            width: 30%;
+            max-width: calc(400/16 * 1rem);
+            /* pushes everything to the right of it as far as possible in a flexbox */
+            margin-right: auto;
+        }
 
-		.cs-text {
-			width: 100%;
-		}
+        .cs-text {
+            width: 100%;
+        }
 
-		.cs-social {
-			flex-direction: row;
-			position: relative;
-			top: auto;
-			right: auto;
-		}
-
-		.cs-contact {
-			width: auto;
-		}
-	}
+        .cs-social {
+            flex-direction: row;
+            position: relative;
+            top: auto;
+            right: auto;
+        }
+    }
 }
+                                
 
 /*-- -------------------------- -->
 <---          Banner            -->
@@ -1595,7 +1645,7 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: #000;
+                background: #000000fd;
                 opacity: 0.5;
                 position: absolute;
                 top: 0;
