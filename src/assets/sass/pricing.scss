@@ -1,0 +1,238 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// PRICING PAGE STYLES
+// Styles for the standalone pricing page (banner + pricing cards).
+// ─────────────────────────────────────────────────────────────────────────────
+
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #pricing-1690 {
+        padding: var(--sectionPadding);
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1em);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-text {
+            max-width: calc(522 / 16 * 1rem);
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap row;
+            justify-content: center;
+            gap: clamp(1rem, 2vw, 1.25rem);
+            transform-style: preserve-3d;
+            perspective: 700px;
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 100%;
+            max-width: calc(500 / 16 * 1rem);
+            margin: 0;
+            box-sizing: border-box;
+            padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            border-radius: calc(24 / 16 * 1rem);
+            overflow: hidden;
+
+            &.cs-popular {
+                background-color: #051325f1;
+                border: 1px solid #c8ccd1;
+
+                .cs-package,
+                .cs-li,
+                .cs-duration {
+                    color: var(--bodyTextColorWhite);
+                }
+
+                .cs-icon {
+                    filter: grayscale(1) brightness(1000%);
+                }
+
+                .cs-price {
+                    color: var(--bodyTextColorWhite);
+                }
+            }
+        }
+
+        .cs-button-solid {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin-top: calc(16 / 16 * 1rem);
+        }
+
+        .cs-package {
+            font-size: calc(25 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-bottom: calc(16 / 16 * 1rem);
+            color: #111926;
+        }
+
+        .cs-ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-li {
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.2em;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: calc(16 / 16 * 1rem);
+
+            &.cs-disabled {
+                opacity: 0.5;
+            }
+        }
+
+        .cs-icon {
+            width: calc(24 / 16 * 1rem);
+            height: auto;
+            display: block;
+        }
+
+        .cs-x {
+            width: calc(24 / 16 * 1rem);
+            height: calc(24 / 16 * 1rem);
+            font-size: 1.1rem;
+            line-height: 1;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .cs-growth-note {
+            font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+            line-height: 1.4em;
+            max-width: 100%;
+            margin-top: calc(16 / 16 * 1rem);
+            color: var(--bodyTextColor);
+            opacity: 0.75;
+        }
+
+        .cs-growth-note + .cs-price {
+            margin-top: calc(8 / 16 * 1rem);
+            padding-top: 0;
+        }
+
+        .cs-price {
+            font-size: calc(49 / 16 * 1rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin-top: auto;
+            padding-top: clamp(3rem, 6vw, 4rem);
+            color: var(--headerColor);
+            display: flex;
+            align-items: baseline;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-duration {
+            font-size: calc(16 / 16 * 1rem);
+            font-weight: 400;
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #pricing-1690 {
+        .cs-item {
+            width: 48.9%;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #pricing-1690 {
+        .cs-card-group {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #pricing-1690 {
+            .cs-title,
+            .cs-text,
+            .cs-li,
+            .cs-package,
+            .cs-price,
+            .cs-duration {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-x {
+                color: #ccc;
+            }
+
+            .cs-growth-note {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.7;
+            }
+
+            .cs-text,
+            .cs-duration {
+                opacity: 0.8;
+            }
+
+            .cs-item {
+                background-color: rgba(0, 0, 0, .2);
+
+                &.cs-popular {
+                    background-color: rgba(0, 0, 0, .6);
+                }
+            }
+
+            .cs-icon {
+                filter: grayscale(1) brightness(1000%);
+            }
+        }
+    }
+}

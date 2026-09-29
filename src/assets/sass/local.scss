@@ -599,6 +599,7 @@
             height: calc(48 / 16 * 1rem);
             margin-bottom: calc(24 / 16 * 1rem);
             display: block;
+            color: var(--primary);
             path {
                 transition: fill 0.3s;
             }
@@ -1113,8 +1114,6 @@
     opacity: 0.75;
 }
 
-}
-
 .cs-growth-note + .cs-price {
     margin-top: calc(8 / 16 * 1rem);
     padding-top: 0;
@@ -1173,6 +1172,7 @@
             transition: filter 0.3s, transform 0.3s;
         }
     }
+}
 
 
 /* Tablet - 768px */
