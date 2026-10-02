@@ -7,7 +7,7 @@ permalink: "/web-design-bowie-texas/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/bowie.css">
 {% endblock %}
 
 {% block body %}
@@ -18,103 +18,147 @@ permalink: "/web-design-bowie-texas/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">Project One Gallery</span>
+            <span class="cs-int-title">Web Design Bowie Texas</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
-                <a href="/project-one/" class="cs-link cs-active">Project One Gallery</a>
+                <a href="/web-design-bowie-texas/" class="cs-link cs-active">Web Design Bowie Texas </a>
             </div>
         </div>
         <!--Background Image-->
 
+    <!--Background Image-->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground/.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
+    </div>
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+   <!-- ============================================ -->
+<!--        Content Page - Web Design Bowie TX    -->
+<!-- ============================================ -->
 
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <!-- Row 1-->
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" width="420" height="567">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" width="420" height="630">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" width="420" height="512">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" width="420" height="492">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" width="420" height="517">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new black window structure" width="420" height="625">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="kitchen rebovation" width="420" height="452">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="bathroom renovation" width="420" height="629">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <img loading="lazy" decoding="async" src="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp" alt="Jerad (Jerry) Rhone of Red Moon Web Design in Bowie, Texas, Montague County" width="768" height="576">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="" aria-hidden="true" width="60" height="60">
+                    <span class="cs-desc">
+                        Built Right Here in Montague County
+                    </span>
                 </div>
             </div>
-            <a href="/contact/" class="cs-button-solid">Get Started</a>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="" width="32" height="32">
+                        90-100 Page Speed
+                    </h3>
+                    <p class="cs-item-text">
+                        Every build hits 90-100 on Google PageSpeed Insights as the baseline, not an upgrade.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="" width="32" height="32">
+                        You Own What We Build
+                    </h3>
+                    <p class="cs-item-text">
+                        No vendor lock in, no platform fee hikes, and your domain is always yours.
+                    </p>
+                </li>
+            </ul>
         </div>
-    </section>
+        <div class="cs-content">
+            <h1 class="cs-title">Web Designer In <span class="cs-color">Bowie, TX</span></h1>
+            <p>
+                Red Moon Web Design is a Bowie business, I live here, I work here, and I build websites here under whatever moon happens to be out. If you run a small business in Bowie and need a website that actually performs, you’re already talking to the right person. I am here to help, no Wix, no Squarespace, no letting AI insert code I did not create. I build the right way, performance focused, Google focused, and set up for growth and expansion. This goes for every business, no matter how small, you will be treated the exact same way here at Red Moon Web Design.
+            </p>
+
+            <h2>As Local As It Gets</h2>
+            <p>
+                I’m Jerad (Jerry is fine as well) and Bowie is home. Not “I live here 1 week out of the year for work”, or “I moved here from X, 2 years ago”, home, actually home. I was raised here, remember Hudspeth Beach back in the day? Yep, that was my family and I, and now I build websites. Every website I build, every client I support, every line of code gets written right here in Montague County.
+            </p>
+            <p>
+                When you work with Red Moon Web Design you’re supporting a local business while getting a genuinely professional result. This is not intended to be a sales pitch, I simply put in extra effort to do things the right way and results follow.
+            </p>
+
+            <h3>What Bowie Businesses Get With Red Moon</h3>
+            <ul>
+                <li>Custom website built on Bricks, a professional grade open source framework</li>
+                <li>Page speeds that consistently hit 90-100 on Google PageSpeed Insights</li>
+                <li>Full mobile optimization from day one</li>
+                <li>Hosting and maintenance always included</li>
+                <li>No big upfront cost, clear monthly plans</li>
+                <li>A real Bowie local available when something needs updating</li>
+            </ul>
+
+            <h2>Already Trusted By Bowie Businesses</h2>
+            <p>
+                Red Moon Web Design works with local Bowie businesses including <a href="https://roswaste.com">Roll Off Solutions</a>, a dumpster rental and demolition company serving Montague County and beyond. Their site was a full rebuild, migrated off an old platform, rebuilt from the ground up, and now actively growing their online presence month over month with aggressive SEO.
+            </p>
+            <p>
+                Red Moon managed to outdo 2 different, and quite large, web agencies by <strong>sheer volume and precision, in less than 3 months</strong>. The website was passed around for over 5 years before that. That’s the kind of work I do and the kind of results I care about.
+            </p>
+
+            <h2>Speed Matters More Than Most People Realize</h2>
+            <p>
+                Google uses page speed as a direct ranking factor. Slow sites get outranked by faster ones even when the content is identical. Every site I build hits 90-100 on Google’s own PageSpeed Insights tool as just a baseline for every build, not an upgrade, just the standard.
+            </p>
+            <p>
+                Test your current site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener">pagespeed.web.dev</a> and see where you stand. Here at Red Moon Web Design, I consider a page speed under 70 to be unacceptable.
+            </p>
+
+            <h2>You Own What We Build</h2>
+            <p>
+                I build with custom code, not Wix, not Squarespace, not GoDaddy. No vendor lock in, no platform fee hikes, and your domain is always yours no matter what. I am a firm believer in asset ownership.
+            </p>
+
+            <h2>Serving Bowie and All of Montague County</h2>
+            <p>
+                Contractors, salons, dumpster rental, waste management, junk removal, restaurants, service businesses, solo practitioners, even small consignment shops, if your business needs a professional website without a massive upfront cost, let’s talk.
+            </p>
+            <h4>Other Areas I Serve</h4>
+            <ul>
+                <li>Clay County</li>
+                <li>Wise County</li>
+                <li>Wichita Falls, TX</li>
+                <li>Decatur, TX</li>
+                <li>Gainesville, TX</li>
+                <li>Montague County, including Nocona, Saint Jo, and beyond</li>
+            </ul>
+            <p>
+                I should note, while this may be my own personal home base, I will gladly build a website for anyone who is interested, wherever that may be.
+            </p>
+
+            <h3>Ready to get your website underway?</h3>
+            <p>
+                <a href="/contact-get-your-website/">Let's build yours</a> and get started.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                                
 
     {% include 'sections/cta.html' %}
 

@@ -175,7 +175,7 @@
                 background-color: var(--accent);
                 &.active {
                     .cs-button {
-                        background-color: var(--bodyTextColorWhite);
+                        background-color: #f7f7f7da;
                         color: var(--primary);
                         &:before,
                         &:after {

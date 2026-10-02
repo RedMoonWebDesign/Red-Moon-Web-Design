@@ -9,8 +9,10 @@ permalink: "/faq/"
  <link rel="preload" as="image" media="(max-width: 600px)" href="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="preload" as="image" media="(min-width: 1024px)" href="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/faq.scss">
-{% block head %}
-   
+
+   {% block head %}
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+    
     <!-- Any page-specific tags that belong in the <head> -->
 {% endblock %}
 
@@ -23,7 +25,7 @@ permalink: "/faq/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
+            <span class="cs-int-title">FAQ</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
                 <a href="/faq/" class="cs-link cs-active">FAQ</a>
@@ -48,102 +50,88 @@ permalink: "/faq/"
     </div>
 
 
-<div id="cs-wrapper-1411">
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
 
-    <section id="reviews-1411">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">Happy Client’s Feedback About Our Service</h2>
-            </div>
-            <div class="cs-flex">
-                <picture class="cs-picture">
-                    <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review-profile.jpg" decoding="async" alt="profile" width="160" height="160" aria-hidden="true">
-                </picture>
-                <div class="cs-item">
-                    <!--Blue Quote-->
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
-                    <p class="cs-item-text">
-                        When you think about collecting customer feed back, it’s easy to get overwhelmed by the sheer volume of . With so many more customers and so many ways to connect with their feedback it’s hard to know to where to start.
-                    </p>
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Jessica Jonson
-                            <span class="cs-job">CTO Of Meriette</span>
+ <!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-326">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Why Is There A 6 Month Minimum?
                         </span>
-                    </div>
-                </div>
-            </div>
+                    </button>
+                    <p class="cs-item-p">
+                        Well if I didn’t do it this way, you could theoretically get a site built in a month, I eat that time sink, get one payment, then poof! The customer decides to leave and I just built a 2000 dollar website for less than 200 bucks. Doesn’t sound like much of a business does it?
+                        <br><br>
+                        In short, I don’t charge you thousands of dollars upfront. I take on that initial cost myself to keep your barrier to entry low.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What Happens If I Do Not Pay The Monthly Subscription Fee? Will I Lose My Site?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes and No…
+                        <br><br>
+                        I understand that things do not always go as planned. At 50 percent off current rate, the homepage will remain active, however, all other pages will be set to private until paid in full. Upon reinstatement, the full price will be collected, regardless of when the previous payment took place.
+                        <br><br>
+                        If 50 percent is still out of the budget, a hosting fee of $20 will be collected monthly, however, all pages will be set to private until payment resumes in full.
+                        <br><br>
+                        Pages will be set to private at intervals of 7 days upon late payments. In order of timeline, at 7 days missed, all except the homepage will be set to private. At another 7 days all pages, including homepage will be set to private. At 30 days, if no payment has been collected the site will be taken down.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What Changes Can I Actually Request To My Site?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Text changes, picture swaps, price changes, new review highlights etc. are all on the table. However, additional sections and new pages are not included unless agreed upon before deployment of the site. New additional pages generally mean a one time fee of $100 per page.
+                        <br><br>
+                        This may seem a bit odd when thinking about it in terms of one site, however, with 20 plus sites these safeguards become an absolute necessity. This protects me from getting taken advantage of while keeping resources available for the customers who really need it.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do I Own My Website?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        <strong>Subscription (No):</strong> After 6 months of your subscription, each payment will be month to month if you choose to stay. If you decide the site is no longer worth the money, the site does absolutely stay with me, but your domain is absolutely yours regardless of circumstances, I will never hold that hostage (Looking at you everyone else…)
+                        <br><br>
+                        <strong>Lump Sum (Yes):</strong> If you want full ownership from day one, I offer a lump-sum option. Contact me for details. Prices usually fall at $2000 for a standard site. Hosting and maintenance only would be $20 per month post lump sum payment. Add unlimited edits/updates, plus hosting/maintenance, for a monthly grand total payment of $70 post lump sum payment.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What's With The Name Red Moon Web Design?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Well Red (Blood) Moons are great, are they not? In all seriousness I needed a name that could blend my sense of creative spirit with something tangible and semi normal enough to be taken seriously. I could have gone the SEO route and just called it best texas website designer or something silly and generic but that is simply not me. Enter Red Moon Web Design.
+                        <br><br>
+                        I am a father to a ridiculously great child in the morning, a normal working adult in the middle of the day, and a web designer at night. As of writing this 90% of the work I have put in to html, css, wordpress, design, and site building has been done between the hours of 11:30 p.m. and 2:30 a.m. It’s been this way for years at this point, so the idea of designing websites under a red moon made absolute sense as I have literally done this many times. The name essentially created itself. My SO actually swears I came up with the name during a blood moon, as the night before I told her about my new moniker, there was indeed a blood moon.
+                    </p>
+                </li>
+            </ul>
         </div>
-        <div class="cs-bubbles" aria-hidden="true"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                     FAQ                      -->
-    <!-- ============================================ -->
-
-    <section id="faq-1411">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
-                <ul class="cs-faq-group">
-                    <!-- Active class added as default -->
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can I change where I want my donation to go?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Where does my transaction processing fee go?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How can I receive a refund?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Is my credit card information secure?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/black-leaves.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/black-leaves.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/black-leaves.jpg" alt="leaves" width="1280" height="568">
-        </picture>
-    </section>
-</div>
+    </div>
+</section>
                                 
     <!-- If you want the page to have a "CTA", remove the {# and #} below -->
     {% include 'sections/cta.html' %} 

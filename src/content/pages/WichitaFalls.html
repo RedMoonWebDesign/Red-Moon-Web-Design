@@ -7,7 +7,7 @@ permalink: "/web-design-wichita-falls-texas/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/wichitafalls.css">
 {% endblock %}
 
 {% block body %}
@@ -18,103 +18,136 @@ permalink: "/web-design-wichita-falls-texas/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">Project Two Gallery</span>
+            <span class="cs-int-title">Web Design Wichita Falls TX</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
-                <a href="/project-two/" class="cs-link cs-active">Project Two Gallery</a>
+                <a href="/web-design-wichita-falls-tx/" class="cs-link cs-active">Small Business Web Design Wichita Falls TX</a>
             </div>
         </div>
         <!--Background Image-->
 
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
     <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+<!--   Content Page - Web Design Wichita Falls TX -->
+<!-- ============================================ -->
 
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <!-- Row 1-->
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" width="420" height="567">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" width="420" height="630">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" width="420" height="512">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" width="420" height="492">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" width="420" height="517">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new black window structure" width="420" height="625">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="kitchen rebovation" width="420" height="452">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="bathroom renovation" width="420" height="629">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <img loading="lazy" decoding="async" src="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp" alt="Jerad (Jerry) Rhone of Red Moon Web Design, serving Wichita Falls, Texas" width="768" height="576">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="" aria-hidden="true" width="60" height="60">
+                    <span class="cs-desc">
+                        Based in Bowie, About an Hour Down 287
+                    </span>
                 </div>
             </div>
-            <a href="/contact/" class="cs-button-solid">Get Started</a>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="" width="32" height="32">
+                        90-100 Page Speed
+                    </h3>
+                    <p class="cs-item-text">
+                        Every site hits 90-100 on Google PageSpeed Insights from day one, as the standard.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="" width="32" height="32">
+                        You Own What We Build
+                    </h3>
+                    <p class="cs-item-text">
+                        No vendor lock-in, no platform fee hikes, and your domain is always yours.
+                    </p>
+                </li>
+            </ul>
         </div>
-    </section>
+        <div class="cs-content">
+            <h1 class="cs-title">Web Design In <span class="cs-color">Wichita Falls, TX</span></h1>
+            <p>
+                Wichita Falls has a lot going for it, a growing downtown, a strong small business community, and more people searching online for local services every single day. If your business doesn’t have a fast, professional website, someone else in Wichita Falls does and they’re getting the call instead of you. At Red Moon Web Design, I build high performance websites for Wichita Falls small businesses, with no big upfront cost.
+            </p>
+
+            <h2>North Texas Local, Not A Faceless Agency</h2>
+            <p>
+                I’m Jerad, a solo web designer based out of Bowie, about an hour down 287. I work with small businesses all across North Texas and I take that work seriously. No outsourcing, no account managers, no ticket systems. When you reach out you get me, directly, every time. I know the area, I know the market, and I genuinely want to see local businesses do well.
+            </p>
+
+            <h3>What Wichita Falls Businesses Get With Red Moon</h3>
+            <ul>
+                <li>Custom website, hand coded</li>
+                <li>Page speeds that consistently hit 90-100 on Google PageSpeed Insights</li>
+                <li>Full mobile optimization, because that’s where your customers are searching</li>
+                <li>Hosting and maintenance always included</li>
+                <li>No big upfront cost, clear monthly plans</li>
+                <li>A real person available when something needs updating</li>
+            </ul>
+
+            <h2>Why Page Speed Is A Competitive Advantage In Wichita Falls</h2>
+            <p>
+                Wichita Falls is a bigger market than most of the surrounding area and that means more competition online. It also means a steady stream of newcomers, from families stationed at Sheppard Air Force Base to students arriving at Midwestern State University, who don’t know who to call yet and search online first. When two businesses offer similar services, the one with the faster, better built website wins more often than not, because Google rewards performance with higher rankings and visitors reward it by actually staying on the page.
+            </p>
+            <p>
+                Every site I build hits 90-100 on Google PageSpeed Insights from day one. Not as an upgrade, just as the standard. Go check your current site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener">pagespeed.web.dev</a> and see exactly where you stand right now.
+            </p>
+
+            <h2>Built For Mobile</h2>
+            <p>
+                The majority of people searching for a local business in Wichita Falls are doing it on their phone whether they’re out on the Circle Trail, grabbing coffee downtown, or just sitting at home. The same goes for the crowds that fill the city every August for the Hotter’N Hell Hundred, searching for a place to eat or a shop that’s open. If your site doesn’t perform on mobile, you’re losing those customers before they ever read a word. Every site I build is fully optimized for mobile from the ground up, not as an afterthought.
+            </p>
+
+            <h2>You Own What We Build</h2>
+            <p>
+                I hand code every site, not Wix, Squarespace, or GoDaddy. That means no vendor lock-in, no platform fee hikes, and your domain is always yours no matter what. You get a professional, high performance website without someone else holding the keys.
+            </p>
+
+            <h2>Serving Wichita Falls and Wichita County</h2>
+            <p>
+                Contractors, salons, restaurants, medical offices, landscapers, service businesses of all kinds, if your Wichita Falls business needs a website that actually performs, I’d love to help.
+            </p>
+            <p>
+                I am based in <a href="/web-design-bowie-texas/">Bowie</a>, so naturally I serve Henrietta, <a href="/web-design-nocona-texas/">Nocona</a> and the towns in between, but I also serve Wichita Falls and the surrounding area, and I’m always happy to talk through what you need before you commit to anything.
+            </p>
+
+            <h3>Ready to get your website underway?</h3>
+            <p>
+                Give me a call, shoot me a text, or fill out the <a href="/contact-get-your-website/">contact form</a>. I get back to people fast and I’m easy to work with.
+            </p>
+            <ul>
+                <li>Phone (text preferred): <a href="tel:+19409236231">(940) 923-6231</a></li>
+                <li>Email: <a href="mailto:jerry@redmoonwebdesign.com">jerry@redmoonwebdesign.com</a></li>
+            </ul>
+            <p>
+                <a href="/contact-get-your-website/">Let's build yours</a> and get started.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
 
     {% include 'sections/cta.html' %}
 

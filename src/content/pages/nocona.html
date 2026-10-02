@@ -1,5 +1,5 @@
 ---
-description: "Meta description for the page"
+description: "Web design for Nocona, TX small service businesses. Easy payments, easy to work with."
 image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
 eleventyComputed:
   title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
@@ -16,7 +16,151 @@ eleventyComputed:
 {% endblock %}
 
 {% block body %}
-    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+    
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Web Design Nocona Texas</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/web-design-nocona-texas/" class="cs-link cs-active">Web Design Nocona Texas </a>
+            </div>
+        </div>
+        <!--Background Image-->
+
+    <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground/.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+    </div>
+<!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+        <!-- ============================================ -->
+<!--       Content Page - Web Design Nocona TX    -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <img loading="lazy" decoding="async" src="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp" alt="Jerad (Jerry) Rhone of Red Moon Web Design, serving Nocona, Texas in Montague County" width="768" height="576">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="" aria-hidden="true" width="60" height="60">
+                    <span class="cs-desc">
+                        Just a Few Miles Down the Road in Bowie
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="" width="32" height="32">
+                        90-100 Page Speed
+                    </h3>
+                    <p class="cs-item-text">
+                        Every build hits 90-100 on Google PageSpeed Insights as the baseline, not a bonus.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="" width="32" height="32">
+                        You Own What We Build
+                    </h3>
+                    <p class="cs-item-text">
+                        No platform lock-in, no surprise fee increases, and your domain is always yours.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Web Design <span class="cs-color">Nocona, TX</span></h1>
+
+            <p>
+                Nocona is a small town that punches above its weight. Between the boot making history, Nocona Coffee Roasters, which honestly fuels a good portion of my late night work sessions, and a community that genuinely supports its local businesses, there’s a lot worth showing up for here. If your business needs a website that does the same, that’s exactly what I build.
+            </p>
+
+            <h2>Red Moon Web Design Is Just A Few Miles Away</h2>
+            <p>
+                I’m Jerad (or Jerry if you prefer), based out of Bowie just down 82. Nocona is practically in my backyard and I work with small businesses all across Montague County. No agencies, no outsourcing, just a local developer who is easy to reach and easy to work with.
+            </p>
+
+            <h3>What Nocona Businesses Get With Red Moon</h3>
+            <ul>
+                <li>Custom website built on Bricks, a professional grade open source framework</li>
+                <li>Page speeds hitting 90-100 on Google PageSpeed Insights consistently</li>
+                <li>Full mobile optimization from day one</li>
+                <li>Hosting and maintenance always included</li>
+                <li>No big upfront cost, clear monthly plans</li>
+                <li>A real person available when something needs to change</li>
+            </ul>
+
+            <h2>A Slow Website May Cost You</h2>
+            <p>
+                A slow website costs you visitors before they even see what you offer. Google knows this too and rewards faster sites with better rankings. Every site I build hits 90-100 on Google’s own scoring tool as a baseline, not a bonus, just the standard.
+            </p>
+            <p>
+                Check your current site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener">pagespeed.web.dev</a> and see where things stand.
+            </p>
+
+            <h2>You Own What We Build</h2>
+            <p>
+                I build on Bricks, a professional open source framework. No platform lock-in, no surprise fee increases, and your domain is always yours regardless of circumstances. You get a professional website without the strings attached.
+            </p>
+
+            <h2>Serving Nocona and Surrounding Areas</h2>
+            <p>
+                Salons, contractors, restaurants, service businesses of all kinds, if your Nocona business needs a professional online presence without a massive upfront investment, let’s get to work.
+            </p>
+            <h4>Other Areas I Serve Regularly</h4>
+            <ul>
+                <li><a href="/web-design-bowie-texas/">Bowie</a></li>
+                <li><a href="/web-design-decatur-texas/">Decatur</a></li>
+                <li><a href="/web-design-wichita-falls-texas/">Wichita Falls</a></li>
+                <li>The surrounding Montague County area</li>
+            </ul>
+            <p>
+                If you have a business anywhere in North Texas, or the entire U.S. for that matter, get in contact with me.
+            </p>
+
+            <h2>Straightforward Pricing</h2>
+            <p>
+                Give me a call, shoot me a text, or fill out the contact form. I’m easy to reach and happy to talk through any questions before you commit to anything.
+            </p>
+            <ul>
+                <li>Phone (text preferred): <a href="tel:+19409236231">(940) 923-6231</a></li>
+                <li>Email: <a href="mailto:jerry@redmoonwebdesign.com">jerry@redmoonwebdesign.com</a></li>
+            </ul>
+
+            <h3>Ready to get your website underway?</h3>
+            <p>
+                <a href="/contact-get-your-website/">Let's build yours</a> and get started.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
 
     <!-- If you want the page to have a "CTA", remove the {# and #} below -->
     {% include 'sections/cta.html' %} 

@@ -17,7 +17,141 @@ eleventyComputed:
 
 {% block body %}
     <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+<!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
 
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Web Design For Contractors</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/bridgeport-web-design/" class="cs-link cs-active">Web Design Bridgeport TX</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+<!--     Content Page - Web Designer Bridgeport   -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp">
+                    <img loading="lazy" decoding="async" src="https://redmoonwebdesign.com/wp-content/uploads/2025/03/8567167533655784388-1-768x576.webp" alt="Jerad (Jerry) Rhone of Red Moon Web Design, serving Bridgeport, Texas" width="768" height="576">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="" aria-hidden="true" width="60" height="60">
+                    <span class="cs-desc">
+                        Based in Bowie, Just Up 287 From Decatur
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="" width="32" height="32">
+                        90+ Page Speed
+                    </h3>
+                    <p class="cs-item-text">
+                        Every site hits 90+ on Google PageSpeed Insights from day one, as the standard.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="" width="32" height="32">
+                        You Own What We Build
+                    </h3>
+                    <p class="cs-item-text">
+                        No vendor lock-in, no platform fee hikes, and your domain is always yours.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Web Designer Serving <span class="cs-color">Bridgeport, TX</span></h1>
+            <p>
+                Bridgeport is a town that takes its small business community seriously, and it shows. Between the historic downtown, Lake Bridgeport just up the road, and a community that genuinely supports local, there’s a lot worth building here. This is the Stagecoach Capital of Texas after all, and the town still throws Butterfield Stage Days every year to prove it.
+            </p>
+            <p>
+                If your business needs a website that reflects that, that’s exactly what I do. At Red Moon Web Design I build fast, professional websites for Bridgeport small businesses, with no big upfront cost.
+            </p>
+
+            <h2>A Local Developer Who Gets It</h2>
+            <p>
+                I’m Jerad (aka Jerry), a solo web designer based out of <a href="/web-design-bowie-texas/">Bowie</a>, just up 287 from Decatur. I work with small businesses all across Wise and Montague County and I genuinely enjoy it. No outsourcing, no account managers, no chasing someone down for a simple update. When you reach out you get me, directly, every time.
+            </p>
+
+            <h3>What Bridgeport Businesses Get With Red Moon</h3>
+            <ul>
+                <li>Custom website, hand coded</li>
+                <li>Page speeds that consistently hit 90-100 on Google PageSpeed Insights</li>
+                <li>Full mobile optimization, because that’s where your customers are searching</li>
+                <li>Hosting and maintenance always included</li>
+                <li>No big upfront cost, clear monthly plans</li>
+                <li>A real person available when something needs updating</li>
+            </ul>
+
+            <h2>Speed Is How You Get Found</h2>
+            <p>
+                Google rewards fast websites with better rankings and punishes slow ones regardless of how good your business actually is. Every site I build hits 90+ on Google PageSpeed Insights from day one, not as an upgrade, just as the standard.
+            </p>
+            <p>
+                Bridgeport got its name from a bridge built so stagecoaches could cross the West Fork of the Trinity. Your website works the same way. Make the crossing easy and people keep coming. Go check your current site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener">pagespeed.web.dev</a> and see exactly where you stand right now.
+            </p>
+
+            <h2>You Own What We Build</h2>
+            <p>
+                I hand code every site, not Wix, Squarespace, or GoDaddy. No vendor lock-in, no platform fee hikes, and your domain is always yours no matter what. You get a professional website without anyone else holding the keys.
+            </p>
+
+            <h2>Serving Bridgeport and Wise County</h2>
+            <p>
+                Contractors, demolition, junk removal, salons, restaurants, landscapers, service businesses of all kinds. If your Bridgeport business needs a website that actually works for you, I’d love to help. I serve Bridgeport and the surrounding Wise County area regularly, including <a href="/web-design-decatur-texas/">Decatur</a> just down the road.
+            </p>
+
+            <h2>Straightforward Pricing</h2>
+            <p>
+                Everything included: design, development, hosting, maintenance, and ongoing support. No hidden fees, no surprises, no contracts designed to trap you. Reach out and I’ll walk you through exactly what it looks like for your business.
+            </p>
+
+            <h3>Ready to get your website underway?</h3>
+            <p>
+                Give me a call, shoot me a text, or fill out the <a href="/contact-get-your-website/">contact form</a>.
+            </p>
+            <ul>
+                <li>Phone: <a href="tel:+19409236231">(940) 923-6231</a></li>
+                <li>Email: <a href="mailto:jerry@redmoonwebdesign.com">jerry@redmoonwebdesign.com</a></li>
+            </ul>
+            <p>
+                <a href="/contact-get-your-website/">Let's build yours</a> and get started.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
     <!-- If you want the page to have a "CTA", remove the {# and #} below -->
     { {% include 'sections/cta.html' %} }
 {% endblock %}
