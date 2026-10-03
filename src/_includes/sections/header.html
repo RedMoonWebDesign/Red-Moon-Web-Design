@@ -27,45 +27,58 @@
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper" id="cs-ul-wrapper">
                 <ul class="cs-ul">
-                    <li class="cs-li">
-                        <a href="/" class="cs-li-link cs-active" aria-current="page">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/about-red-moon-web-design" class="cs-li-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/web-design-pricing/" class="cs-li-link">
-                            Pricing
-                        </a>
-                    </li>
-                    <li class="cs-li cs-dropdown">
-                    <button class="cs-li-link cs-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                     Locations
-                    </button>
-                    <ul class="cs-drop-ul">
-                    <li class="cs-drop-li"><a href="/web-design-bowie-texas/" class="cs-drop-link">Bowie</a></li>
-                    <li class="cs-drop-li"><a href="/web-design-wichita-falls-texas/" class="cs-drop-link">Wichita Falls</a></li>
-                    <li class="cs-drop-li"><a href="/web-design-decatur-texas/" class="cs-drop-link">Decatur</a></li>
-                    <li class="cs-drop-li"><a href="/web-design-nocona-texas/" class="cs-drop-link">Nocona</a></li>
-                    <li class="cs-drop-li"><a href="/web-designer-gainesville-texas/" class="cs-drop-link">Gainesville</a></li>
-                    <li class="cs-drop-li"><a href="/bridgeport-web-design/" class="cs-drop-link">Bridgeport</a></li>
-                    </ul>
-                    </li>
-                     <li class="cs-li">
-                        <a href="/faq/" class="cs-li-link">
-                            FAQ
-                        </a>
-                        </li>
-                    <li class="cs-li">
-                        <a href="/contact-get-your-website" class="cs-li-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+    <li class="cs-li">
+        <a href="/" class="cs-li-link {% if page.url == '/' %}cs-active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>
+            Home
+        </a>
+    </li>
+    <li class="cs-li">
+        <a href="/about-red-moon-web-design/" class="cs-li-link {% if page.url == '/about-red-moon-web-design/' %}cs-active{% endif %}" {% if page.url == '/about-red-moon-web-design/' %}aria-current="page"{% endif %}>
+            About
+        </a>
+    </li>
+    <li class="cs-li">
+        <a href="/web-design-pricing/" class="cs-li-link {% if page.url == '/web-design-pricing/' %}cs-active{% endif %}" {% if page.url == '/web-design-pricing/' %}aria-current="page"{% endif %}>
+            Pricing
+        </a>
+    </li>
+
+    {% set locationUrls = [
+        '/web-design-bowie-texas/',
+        '/web-design-wichita-falls-texas/',
+        '/web-design-decatur-texas/',
+        '/web-design-nocona-texas/',
+        '/web-designer-gainesville-texas/',
+        '/bridgeport-web-design/'
+    ] %}
+    <li class="cs-li cs-dropdown">
+        <button class="cs-li-link cs-dropdown-toggle {% if page.url in locationUrls %}cs-active{% endif %}" aria-expanded="false" aria-haspopup="true">
+            Locations
+            <svg class="cs-drop-icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </button>
+        <ul class="cs-drop-ul">
+            <li class="cs-drop-li"><a href="/web-design-bowie-texas/" class="cs-drop-link" {% if page.url == '/web-design-bowie-texas/' %}aria-current="page"{% endif %}>Bowie</a></li>
+            <li class="cs-drop-li"><a href="/web-design-wichita-falls-texas/" class="cs-drop-link" {% if page.url == '/web-design-wichita-falls-texas/' %}aria-current="page"{% endif %}>Wichita Falls</a></li>
+            <li class="cs-drop-li"><a href="/web-design-decatur-texas/" class="cs-drop-link" {% if page.url == '/web-design-decatur-texas/' %}aria-current="page"{% endif %}>Decatur</a></li>
+            <li class="cs-drop-li"><a href="/web-design-nocona-texas/" class="cs-drop-link" {% if page.url == '/web-design-nocona-texas/' %}aria-current="page"{% endif %}>Nocona</a></li>
+            <li class="cs-drop-li"><a href="/web-designer-gainesville-texas/" class="cs-drop-link" {% if page.url == '/web-designer-gainesville-texas/' %}aria-current="page"{% endif %}>Gainesville</a></li>
+            <li class="cs-drop-li"><a href="/bridgeport-web-design/" class="cs-drop-link" {% if page.url == '/bridgeport-web-design/' %}aria-current="page"{% endif %}>Bridgeport</a></li>
+        </ul>
+    </li>
+
+    <li class="cs-li">
+        <a href="/faq/" class="cs-li-link {% if page.url == '/faq/' %}cs-active{% endif %}" {% if page.url == '/faq/' %}aria-current="page"{% endif %}>
+            FAQ
+        </a>
+    </li>
+    <li class="cs-li">
+        <a href="/contact-get-your-website/" class="cs-li-link {% if page.url == '/contact-get-your-website/' %}cs-active{% endif %}" {% if page.url == '/contact-get-your-website/' %}aria-current="page"{% endif %}>
+            Contact
+        </a>
+    </li>
+</ul>
             </div>
        </nav>
      <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
