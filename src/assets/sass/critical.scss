@@ -365,7 +365,38 @@
     body.dark-mode {
         #hero-1351 .cs-background:after {
             /* light touch — raise toward 0.6+ for a stronger overlay */
-            opacity: 0.60;
+            opacity: 0.7;
         }
     }
 }                  
+
+/* One moon instead of two */
+#hero-1351 .cs-bubbles2 {
+  display: none;
+}
+
+/* Make the red circle read as a glowing moon */
+#hero-1351 .cs-bubbles1::after {
+  background: radial-gradient(circle at 35% 35%, #d9574b 0%, #aa372f 55%, #7a2620 100%);
+  box-shadow:
+    0 0 60px rgba(217, 87, 75, 0.45),
+    0 0 140px rgba(170, 55, 47, 0.3);
+}
+
+/* Dark mode: glowing ring and a stronger moon glow */
+body.dark-mode #hero-1351 .cs-bubbles1::before {
+  border: 2px solid #ffe3df;
+  box-shadow:
+    0 0 10px #ffffff94,
+    0 0 20px #ffffffbb,
+    0 0 40px #ffffff98,
+    0 0 40px rgba(224, 86, 74, 0.6),
+    inset 0 0 10px #fff,
+    inset 0 0 20px rgba(224, 86, 74, 0.);
+}
+
+body.dark-mode #hero-1351 .cs-bubbles1::after {
+  box-shadow:
+    0 0 20px rgba(217, 87, 75, 0.4),
+    0 0 60px rgba(170, 55, 47, 0.2);
+}
