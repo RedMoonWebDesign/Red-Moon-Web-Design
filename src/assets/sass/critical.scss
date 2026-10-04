@@ -365,7 +365,7 @@
     body.dark-mode {
         #hero-1351 .cs-background:after {
             /* light touch — raise toward 0.6+ for a stronger overlay */
-            opacity: 0.7;
+            opacity: 0.8;
         }
     }
 }                  
@@ -377,26 +377,27 @@
 
 /* Make the red circle read as a glowing moon */
 #hero-1351 .cs-bubbles1::after {
-  background: radial-gradient(circle at 35% 35%, #d9574b 0%, #aa372f 55%, #7a2620 100%);
+  background: radial-gradient(circle at 35% 35%, #912a21 0%, #aa372f48 55%, #7a262052 100%);
   box-shadow:
-    0 0 60px rgba(217, 87, 75, 0.45),
-    0 0 140px rgba(170, 55, 47, 0.3);
+    0 0 20px rgba(217, 87, 75, 0),
+    0 0 40px rgba(170, 55, 47, 0);
+    border: 1px solid #000000;
 }
 
 /* Dark mode: glowing ring and a stronger moon glow */
 body.dark-mode #hero-1351 .cs-bubbles1::before {
-  border: 2px solid #ffe3df;
+  border: 2px solid #fffbfbf3;
   box-shadow:
-    0 0 10px #ffffff94,
-    0 0 20px #ffffffbb,
-    0 0 40px #ffffff98,
-    0 0 40px rgba(224, 86, 74, 0.6),
-    inset 0 0 10px #fff,
-    inset 0 0 20px rgba(224, 86, 74, 0.);
+    0 0 10px #ffffffab,
+    0 0 20px #ffffff93,
+    0 0 40px #ffffff49,
+    0 0 40px rgba(46, 10, 94, 0.356),
+    inset 0 0 10px #b3afbd71,
+    inset 0 0 20px rgba(134, 124, 153, 0.658);
 }
 
 body.dark-mode #hero-1351 .cs-bubbles1::after {
   box-shadow:
-    0 0 20px rgba(217, 87, 75, 0.4),
-    0 0 60px rgba(170, 55, 47, 0.2);
+    0 0 20px rgba(122, 27, 19, 0.233),
+    0 0 60px rgba(73, 17, 13, 0.623);
 }

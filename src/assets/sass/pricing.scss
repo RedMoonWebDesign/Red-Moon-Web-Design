@@ -60,7 +60,7 @@
             align-items: stretch;
             border-radius: calc(24 / 16 * 1rem);
             overflow: hidden;
-
+           
             &.cs-popular {
                 background-color: #110a1f;
                 border: 1px solid #c8ccd1;
@@ -227,6 +227,8 @@
 
                 &.cs-popular {
                     background-color: rgba(0, 0, 0, .6);
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.63);
+                    box-shadow: 0 0 40px rgba(255, 255, 255, 0.548);
                 }
             }
 

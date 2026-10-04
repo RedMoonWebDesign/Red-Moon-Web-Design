@@ -373,7 +373,7 @@
                 width: calc(330 / 16 * 1em);
                 height: calc(330 / 16 * 1em);
                 background: transparent;
-                border: 1px solid #1a1a1a;
+                border: 1px solid #080808;
                 border-radius: 50%;
                 opacity: 1;
                 position: absolute;
@@ -405,6 +405,8 @@
                 animation-timing-function: ease-in-out;
                 animation-fill-mode: forwards;
                 animation-iteration-count: infinite;
+                border: 1px solid #000000;
+                 background: radial-gradient(circle at 35% 35%, #912a21 0%, #aa372f48 55%, #7a262052 100%);
             }
         }
     }
@@ -465,7 +467,7 @@
 
             .cs-item {
                 background-color: rgba(0, 0, 0, 0.2);
-                border-color: rgba(255, 255, 255, 0.2);
+                border-color: rgba(231, 224, 224, 0.973);
             }
 
             .cs-h3 {
@@ -475,15 +477,18 @@
             .cs-icon {
                 filter: grayscale(1) brightness(1000%);
             }
+  
+}
 
             .cs-bubbles {
                 &:before {
-                    border-color: rgba(255, 255, 255, 0.2);
-                }
+                    border-color: 2px solid rgba(245, 243, 243, 0.966);
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.644);
+                    box-shadow: 0 0 40px rgba(255, 255, 255, 0.726);
+                   }
             }
         }
     }
-}
         /*-- -------------------------- -->
 <---        Why Choose          -->
 <--- -------------------------- -*/
@@ -1024,6 +1029,7 @@
             &.cs-popular {
                 background-color: #051120f1;
                 border: 1px solid #c8ccd1;
+                
 
                 .cs-package,
                 .cs-li,
@@ -1230,6 +1236,9 @@
 
                 &.cs-popular {
                     background-color: rgba(0, 0, 0, 0.6);
+                     border: 1px solid #f7f4f4;
+                     box-shadow: 0 0 20px rgba(255, 255, 255, 0.63);
+                    box-shadow: 0 0 40px rgba(255, 255, 255, 0.548);
                 }
             }
 
@@ -1477,6 +1486,8 @@
                 animation-timing-function: ease-in-out;
                 animation-fill-mode: forwards;
                 animation-iteration-count: infinite;
+                border: 1px solid #000000;
+                 background: radial-gradient(circle at 35% 35%, #912a21 0%, #aa372f48 55%, #7a262052 100%);
             }
         }
     }
@@ -1547,7 +1558,9 @@
 
             .cs-bubbles {
                 &:before {
-                    border-color: rgba(255, 255, 255, 0.2);
+                    border-color: rgba(235, 229, 229, 0.973);
+                      box-shadow: 0 0 20px rgba(255, 255, 255, 0.63);
+                    box-shadow: 0 0 40px rgba(255, 255, 255, 0.548);
                 }
             }
         }
