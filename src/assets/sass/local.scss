@@ -83,7 +83,7 @@
 	body.dark-mode {
 		#reviews-2588 {
 			.cs-container {
-				background-color: rgba(0, 0, 0, 0.2);
+				background-color: var(--Dark);
 			}
 
 			.cs-item-text,
@@ -968,7 +968,7 @@
 @media only screen and (min-width: 0rem) {
     #pricing-1690 {
         padding: var(--sectionPadding);
-        .cs-container {
+       .cs-container {
             width: 100%;
             max-width: calc(1280 / 16 * 1em);
             margin: auto;
@@ -993,6 +993,7 @@
         .cs-text {
             max-width: calc(522 / 16 * 1rem);
         }
+        
 
         .cs-card-group {
             width: 100%;
@@ -1027,10 +1028,8 @@
     overflow: hidden;
 
             &.cs-popular {
-                background-color: #051120f1;
+                background-color: #000000f1;
                 border: 1px solid #c8ccd1;
-                
-
                 .cs-package,
                 .cs-li,
                 .cs-duration {
@@ -1055,6 +1054,7 @@
     align-items: center;
     width: fit-content;
     margin-top: calc(16 / 16 * 1rem);
+    background-color: var (--primary);
 }
         .cs-package {
             font-size: calc(25 / 16 * 1rem);
@@ -1205,8 +1205,10 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
+@media only screen and (min-width: 0rem)
+{
+    body.dark-mode 
+    {
         #pricing-1690 {
             .cs-title,
             .cs-text,
@@ -1234,7 +1236,7 @@
             .cs-item {
                 background-color: rgba(0, 0, 0, .2);
 
-                &.cs-popular {
+                &.cs-popular{
                     background-color: rgba(0, 0, 0, 0.6);
                      border: 1px solid #f7f4f4;
                      box-shadow: 0 0 20px rgba(255, 255, 255, 0.63);

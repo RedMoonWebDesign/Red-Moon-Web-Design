@@ -62,7 +62,7 @@
             overflow: hidden;
            
             &.cs-popular {
-                background-color: #110a1f;
+                background-color: #0d0a1a;
                 border: 1px solid #c8ccd1;
 
                 .cs-package,
@@ -80,6 +80,7 @@
                 }
             }
         }
+    
 
         .cs-button-solid {
             display: inline-flex;
@@ -87,6 +88,7 @@
             align-items: center;
             width: fit-content;
             margin-top: calc(16 / 16 * 1rem);
+            background-color: var(--primary);
         }
 
         .cs-package {
@@ -177,6 +179,7 @@
     }
 }
 
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #pricing-1690 {
@@ -207,7 +210,6 @@
             .cs-duration {
                 color: var(--bodyTextColorWhite);
             }
-
             .cs-x {
                 color: #ccc;
             }
@@ -232,9 +234,12 @@
                 }
             }
 
+  
             .cs-icon {
                 filter: grayscale(1) brightness(1000%);
             }
         }
     }
 }
+
+
