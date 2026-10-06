@@ -56,7 +56,7 @@
 			left: 50%;
 			z-index: 1;
 			transform: translate(-50%, 0);
-		}
+        }
 
 		.cs-graphic {
 			width: 100%;
@@ -65,7 +65,8 @@
 			mix-blend-mode: difference;
 			position: absolute;
 			bottom: 0;
-		}
+            
+	   }
 	}
 }
 
@@ -83,7 +84,7 @@
 	body.dark-mode {
 		#reviews-2588 {
 			.cs-container {
-				background-color: var(--Dark);
+				background-color: var(--dark);
 			}
 
 			.cs-item-text,
@@ -97,7 +98,7 @@
 
 			.cs-quote {
 				opacity: 0.2;
-			}
+            }
 		}
 	}
 }

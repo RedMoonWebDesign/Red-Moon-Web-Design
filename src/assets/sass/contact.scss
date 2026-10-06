@@ -416,7 +416,7 @@
 
             &.active {
                 .cs-button {
-                    background-color: var(--primary);
+                    background-color: var(--medium);
                     color: var(--bodyTextColorWhite);
                     &:before {
                         background-color: var(--secondaryLight);
@@ -535,14 +535,14 @@
             }
 
             .cs-faq-item {
-                background-color: var(--accent);
+                background-color: var(--medium);
                 &.active {
                     .cs-button {
-                        background-color: #f7f7f7da;
-                        color: var(--primary);
+                        background-color: var(--accentblue);
+                        color: var(--dark);
                         &:before,
                         &:after {
-                            background-color: var(--primary);
+                            background-color: var(--medium);
                         }
                     }
                 }
