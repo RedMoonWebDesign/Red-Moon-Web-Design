@@ -1585,11 +1585,12 @@
     #banner-310 {
         width: 100%;
         /* pushes content down below the fixed nav */
-        padding-top: calc(160 / 16 * 1rem);
-        padding-bottom: calc(48 / 16 * 1rem);
+        padding-top: calc(210 / 16 * 1rem);
+        padding-bottom: calc(60 / 16 * 1rem);
         position: relative;
         overflow: hidden;
         z-index: 1;
+		border-radius: 0 0 50% 50% / 0 0 clamp(100px, 2vw, 50px) clamp(100px, 2vw, 50px);
 
         .cs-container {
             width: 100%;
@@ -1607,11 +1608,13 @@
             color: #fff;
             display: block;
             margin-bottom: calc(8 / 16 * 1rem);
+			text-align: center;
         }
 
         .cs-breadcrumbs {
-            display: flex;
+            display: none;
             gap: calc(8 / 16 * 1rem);
+			
         }
 
         .cs-link {
