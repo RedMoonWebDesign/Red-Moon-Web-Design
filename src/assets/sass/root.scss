@@ -1585,12 +1585,12 @@
     #banner-310 {
         width: 100%;
         /* pushes content down below the fixed nav */
-        padding-top: calc(210 / 16 * 1rem);
-        padding-bottom: calc(60 / 16 * 1rem);
+        padding-top: calc(160 / 16 * 1rem);
+        padding-bottom: calc(30 / 16 * 1rem);
         position: relative;
         overflow: hidden;
         z-index: 1;
-		border-radius: 0 0 50% 50% / 0 0 clamp(100px, 2vw, 50px) clamp(100px, 2vw, 50px);
+		border-radius: 0 0 50% 50% / 0 0 clamp(50px, 2vw, 40px) clamp(50px, 2vw, 40px);
 
         .cs-container {
             width: 100%;

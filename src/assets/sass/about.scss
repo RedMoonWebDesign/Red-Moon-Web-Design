@@ -120,6 +120,8 @@
             height: calc(581 / 16 * 1em);
             left: 0;
             top: 0;
+            background-color: #fff;
+            border: solid 5px var(--dark);
         }
 
         .cs-picture2 {
@@ -128,7 +130,7 @@
             background-color: #fff;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
             /* 6px - 12px */
-            border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+            border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
             right: 0;
             bottom: 0;
         }
