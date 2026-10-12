@@ -38,9 +38,9 @@
     #hero-1351 {
         box-sizing: border-box;
         /* 250px - 500px - leaving extra space for the navigation */
-        padding: clamp(15.625rem, 35.95vw, 25rem) calc(16/16 * 1rem) 0;
+        padding: clamp(12.5rem, 35.95vw, 25rem) calc(16/16 * 1rem) 0;
         /* 200px - 250px */
-        padding-bottom: clamp(12.5rem, 16.5vw, 15.625rem);
+        padding-bottom: clamp(10rem, 16.5vw, 15.625rem);
         overflow: hidden;
         position: relative;
         z-index: 1;
