@@ -35,9 +35,18 @@
 		/* 60px - 100px top and bottom */
 		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-		--headerFont: "Roboto", Arial, sans-serif;
+		--headerFont: "Oswald", Arial, sans-serif;
 		--bodyFont: "Roboto", Arial, sans-serif;
 	}
+
+	/* oswald-700 - latin */
+@font-face {
+	font-style: normal;
+	font-family: "Oswald";
+	font-weight: 700;
+	font-display: swap;
+	src: local(""), url("/assets/fonts/oswald-v57-latin-700.woff2") format("woff2");
+}
 
 	html,
 	body {
@@ -92,6 +101,17 @@
 		color: var(--bodyTextColor);
 	}
 }
+
+   .cs-package {
+            font-size: calc(25 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-bottom: calc(16 / 16 * 1rem);
+            color: #111926;
+            font-family: var(--headerFont);
+            text-transform: uppercase;
+        }
+
 
 /* Components + Utilities */
 @media only screen and (min-width: 0px) {
@@ -255,6 +275,7 @@
 		font-family: var(--headerFont);
 		line-height: 1.2em;
 		color: var(--headerColor);
+		text-transform: uppercase;
 	}
 
 	p,
@@ -327,6 +348,10 @@
 	}
 }
 
+.cs-price {
+                    color: var(--bodyTextColorWhite);
+					font-family: var(--headerFont)
+}
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
 <--- -------------------------- -*/

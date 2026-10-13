@@ -1063,6 +1063,8 @@
             line-height: 1.2em;
             margin-bottom: calc(16 / 16 * 1rem);
             color: #111926;
+            font-family: var(--headerFont);
+            text-transform: uppercase;
         }
 
         .cs-ul {
