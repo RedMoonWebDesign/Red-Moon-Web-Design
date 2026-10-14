@@ -9,7 +9,7 @@ permalink: "/contact-get-your-website/"
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/edpinetreebackground.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -34,7 +34,7 @@ permalink: "/contact-get-your-website/"
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
             <!--Tablet Image-->
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground/.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
@@ -56,17 +56,19 @@ permalink: "/contact-get-your-website/"
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
 Send me an e-mail or text specifying the site package you are interested in, name, business, business type, and everything you wish to have in a site! I will respond within 48 hours!
-<br><br>Once contact form is recieved, I will send over a quick discovery questionnaire to grab the most important aspects of your business. From there I handle all technical heavy lifting while you stay focused on your business.
+<br><br>Once contact form is received, I will send over a quick discovery questionnaire to grab the most important aspects of your business. From there I handle all technical heavy lifting while you stay focused on your business.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="Contact Form">
+    <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
                     <label>
                         Name
                         <input required type="text" id="name-265" name="name" placeholder="Name">
                     </label>
                     <label>
                         Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
+                        <input required type="email" id="email-265" name="email" placeholder="Email">
                     </label>
                     <label>
                         Phone
