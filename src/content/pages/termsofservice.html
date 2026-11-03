@@ -1,0 +1,173 @@
+---
+title: "Terms of Service | Red Moon Web Design"
+description: "The terms for Red Moon Web Design website plans: the 6-month minimum, cancellation, refunds and who owns the site. Version 1.0."
+permalink: "/termsofservice/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/termsofservice.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <h1 class="cs-int-title">Terms of Service</h1>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/terms/" class="cs-link cs-active">Terms of Service</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/redpinetreebackground.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--              Terms of Service                -->
+    <!-- ============================================ -->
+
+    <section id="terms-of-service">
+        <div class="cs-container">
+            <div class="cs-content">
+                <p class="cs-version">Version 1.0, effective November 3, 2026</p>
+
+                <p>
+                    Red Moon Web Design builds your business a fast, hand-coded website, keeps it online, and handles updates so you can get back to work. These terms cover what we do, what you pay, and what happens if either of us wants out.
+                </p>
+                <p>
+                    "We" means Red Moon Web Design. "You" means the business signing up. When you tick the agree box at signup, you accept these terms.
+                </p>
+
+                <div class="cs-key">
+                    <h2>The key terms</h2>
+                    <ul>
+                        <li><strong>6-month minimum.</strong> Your plan runs at least 6 months from your first payment. After that it is month to month, and you can cancel with 30 days notice.</li>
+                        <li><strong>Cancelling before month 6 ends costs $2,400.</strong> That is the full Ownership price. Monthly fees you have already paid do not count toward it.</li>
+                        <li><strong>Refund until you approve the design.</strong> We start with a homepage design. Until you approve it, you can cancel for a full refund. Once you approve it and we start building, payments are non-refundable.</li>
+                        <li><strong>You license the site, you don't own it.</strong> The code and design stay ours unless you buy the Ownership plan. You may not copy them, including with AI tools.</li>
+                    </ul>
+                </div>
+
+                <h2>Plans and pricing</h2>
+                <p>The plan and price on your order form are the ones that apply to you.</p>
+                <div class="cs-table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Plan</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">What it covers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Local Presence</td>
+                                <td>$115/month</td>
+                                <td>Up to 5 pages, hosting, edits, support</td>
+                            </tr>
+                            <tr>
+                                <td>Local Growth</td>
+                                <td>$145/month</td>
+                                <td>Everything in Local Presence, plus Google Business Profile setup, one Google post a month, and help replying to new reviews</td>
+                            </tr>
+                            <tr>
+                                <td>Ownership</td>
+                                <td>$2,400 once, then $20/month hosting</td>
+                                <td>You own the site files and take them with you if you leave</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Your monthly price will not increase during your first 6 months.</p>
+                <p>After that, we will give you 30 days written notice before any price change, and you can cancel before it takes effect.</p>
+
+                <h2>6-month minimum</h2>
+                <p>Local Presence and Local Growth run for a minimum of 6 months, starting the day we receive your first payment. If you cancel before the end of month 6, the early cancellation terms under Cancelling apply.</p>
+                <p>After month 6, your plan continues month to month until you cancel. The Ownership plan has no minimum term.</p>
+
+                <h2>Billing and payment</h2>
+                <p>We start work after your first payment clears. Your payment method is charged on the same day each month.</p>
+                <p>By ticking the agree box and giving us your payment details, you authorize us to charge your payment method monthly until you cancel.</p>
+                <p><strong>Ownership plan.</strong> The $2,400 is paid in two parts: $1,200 before we start, and $1,200 when your site is ready to launch. We launch the site and hand over the files after the final payment clears. The first payment is refundable until you approve the design (see Refunds).</p>
+                <p>If a payment fails, we will email you and try again. If it is still unpaid after 10 days, we may take your site offline until you pay. If it is unpaid after 30 days, we may end service. If you dispute a charge with your bank or card company, we may take your site offline until the dispute is resolved. Please contact us first and we will sort it out. If this happens in your first 6 months, the $2,400 early cancellation payment under Cancelling is due.</p>
+
+                <h2>Cancelling</h2>
+                <p><strong>After month 6:</strong> email us at <a href="mailto:jerry@redmoonwebdesign.com">jerry@redmoonwebdesign.com</a> at least 30 days before your next billing date. Service ends at the end of that billing period. No fee.</p>
+                <p><strong>Before month 6 ends:</strong> you can cancel, but you then owe the full Ownership price of $2,400. Monthly fees you have already paid do not count toward it. It is due within 30 days of cancelling. Your site stays live until it is paid. Once it is paid in full, the site files are yours.</p>
+                <p>Cancelling does not refund fees you have already paid, except under the Refunds section below.</p>
+
+                <h2>Refunds</h2>
+                <p>We start with a homepage design for you to review. Until you approve it, you can cancel for a full refund of what you have paid, and the 6-month minimum no longer applies. Once you approve the design and we start building, payments are non-refundable.</p>
+                <p>The refund covers fees paid to us. It does not cover costs paid to others, such as a domain bought from a registrar. After you approve the design, the cancelling rules above apply.</p>
+
+                <h2>What we provide</h2>
+                <ul>
+                    <li>A homepage design for your approval, then a website built from scratch and hand coded, up to the page count in your plan. Extra pages are quoted before any work starts.</li>
+                    <li>Hosting, and keeping your site online.</li>
+                    <li>Text and image edits on weekdays, usually within 48 hours. Edits are changes to content already on your site. New pages, redesigns and new features are quoted separately. If something on your site breaks, we fix it at no charge, unless it was caused by changes made by you or someone else.</li>
+                    <li>Support by phone, text and email on weekdays.</li>
+                    <li><strong>Local Growth only:</strong> Google Business Profile setup about a week after launch, one Google post a month, and help with replies to new reviews. Review replies are handled in a weekly batch on Mondays. You can reply to reviews yourself, and we can help you draft them.</li>
+                </ul>
+
+                <h2>What you provide</h2>
+                <ul>
+                    <li>Accurate business information, text, photos and your logo, sent in a timely way. Launch dates depend on it. Billing runs from your first payment either way.</li>
+                    <li>Content you have the right to use. You are responsible for photos, text and claims you send us.</li>
+                    <li>Honest reviews. We build review tools that treat every customer the same. We will not filter or hide reviews, and you agree not to ask us to.</li>
+                </ul>
+
+                <h2>Who owns what</h2>
+                <p>You keep your domain name, logo, brand, text and photos. If we register or manage your domain, it stays in your name and we will transfer it to you on request.</p>
+                <p>On Local Presence and Local Growth, we own the website files and design and license them to you while your plan is active. If you cancel, the site comes down at the end of the paid period, and we send you your text and photos on request.</p>
+                <p>You may not copy our code or design, and you may not use AI tools or other software to copy, clone or recreate them for use anywhere else. This applies while your plan is active and after you cancel, unless you have paid for the Ownership plan in full.</p>
+                <p>To take the site files with you after month 6, move to the Ownership plan at the price listed on our pricing page. Monthly fees you have paid do not count toward it. If you cancel before month 6 ends and pay the $2,400 described under Cancelling, the site files are yours.</p>
+                <p>Site files transfer to you only after the Ownership price is paid in full. Until then, we keep them.</p>
+                <p>We may show your site in our portfolio unless you tell us not to.</p>
+
+                <h2>Delays and extra work</h2>
+                <p>If you are slow to send content or approvals, your launch date moves back. If we are waiting on you for 30 days, we may pause your project until we hear from you. Billing continues while it is paused. On the Ownership plan, the final $1,200 becomes due once we have waited 30 days, and the project stays paused until it is paid.</p>
+                <p>Work outside your plan is extra. That includes pages beyond your page count, redesigns, new features and writing content for you. We quote extra work in writing and start only after you approve the quote. A text or email approval counts.</p>
+
+                <h2>The legal part</h2>
+                <p><strong>Third-party services.</strong> Your site relies on services we do not control, such as hosting, payment processing, Google and review platforms. We are not responsible for their outages or rule changes.</p>
+                <p><strong>No guaranteed results.</strong> We build fast, search-friendly sites, but we cannot promise rankings, calls, leads or reviews. Search engines and customers decide those.</p>
+                <p><strong>Limits on liability.</strong> Our total liability to you is limited to the fees you paid us in the 3 months before the claim. We are not liable for lost profits or indirect losses.</p>
+                <p><strong>Warranty.</strong> We test your site in current versions of Chrome, Safari, Edge and Firefox. Beyond that, your site is provided as is, with no other warranty. Changes made to your site by you or anyone else void any remaining warranty.</p>
+                <p><strong>Delays.</strong> We are not liable for delays caused by events outside our control, or by waiting on you for content, approvals or information.</p>
+                <p><strong>Our right to end service.</strong> We may end your service for any reason with 30 days written notice. If we do, we refund any fees you paid for time after the end date, and the $2,400 early cancellation payment does not apply. We may end service immediately if you seriously break these terms, for example by not paying, harassing us, or asking us to publish unlawful content.</p>
+                <p><strong>Changes to these terms.</strong> We may update these terms with 30 days notice by email. An update will not change the price or length of your current term unless you agree.</p>
+                <p><strong>Governing law.</strong> Texas law applies. Any dispute must be brought in the courts of Montague County, Texas, and you agree to that location.</p>
+                <p><strong>Whole agreement.</strong> These terms and your order form are the full agreement between us.</p>
+                <p><strong>Severability.</strong> If a court finds part of these terms unenforceable, the rest stays in effect.</p>
+                <p><strong>No waiver.</strong> If we do not enforce a term once, we can still enforce it later.</p>
+                <p><strong>Assignment.</strong> You may not transfer your plan to someone else without our written consent.</p>
+                <p><strong>Notices.</strong> We may send notices to the email you gave at checkout. You may send notices to <a href="mailto:jerry@redmoonwebdesign.com">jerry@redmoonwebdesign.com</a>.</p>
+                <p><strong>Independent contractor.</strong> We work for you as an independent business, not as your employee, partner or agent.</p>
+                <p><strong>Acceptance.</strong> Ticking the agree box is your electronic signature and means you accept these terms. The business name and email you enter at checkout identify you as the Client, and you confirm you can sign for that business. We record your name, email, the date and time, your IP address, and the version of the terms you accepted.</p>
+
+                <p class="cs-version">Version 1.0, effective November 3, 2026.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

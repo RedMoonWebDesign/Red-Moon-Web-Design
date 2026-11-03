@@ -1,0 +1,197 @@
+/*-- -------------------------- -->
+<---       Terms of Service     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #terms-of-service {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: calc(738 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-size: calc(28 / 16 * 1rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            text-align: inherit;
+            margin: calc(32 / 16 * 1rem) 0 calc(12 / 16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: var(--bodyTextColor);
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+                filter: brightness(120%);
+            }
+        }
+
+        .cs-version {
+            font-size: calc(14 / 16 * 1rem);
+            margin-bottom: calc(24 / 16 * 1rem);
+        }
+
+        ul {
+            width: 100%;
+            padding-left: calc(24 / 16 * 1rem);
+            margin: 0 0 calc(24 / 16 * 1rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: calc(12 / 16 * 1rem);
+
+            li {
+                font-size: var(--bodyFontSize);
+                line-height: 1.5em;
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    /* custom list bullet */
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: calc(10 / 16 * 1rem);
+                    left: calc(-12 / 16 * 1rem);
+                }
+            }
+        }
+
+        /* the three key terms, shown first so they are never buried */
+        .cs-key {
+            width: 100%;
+            margin: calc(8 / 16 * 1rem) 0 calc(8 / 16 * 1rem) 0;
+            padding: calc(20 / 16 * 1rem);
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            border: 1px solid #e8e8e8;
+            border-left: 4px solid var(--primary);
+            border-radius: calc(16 / 16 * 1rem);
+
+            h2 {
+                margin-top: 0;
+            }
+
+            ul {
+                margin-bottom: 0;
+            }
+        }
+
+        .cs-table-wrap {
+            width: 100%;
+            margin: 0 0 calc(24 / 16 * 1rem) 0;
+            /* lets the table scroll sideways on small phones instead of breaking the page */
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: calc(520 / 16 * 1rem);
+            border-collapse: collapse;
+            font-size: calc(15 / 16 * 1rem);
+            line-height: 1.5em;
+        }
+
+        th,
+        td {
+            text-align: left;
+            vertical-align: top;
+            padding: calc(12 / 16 * 1rem);
+            border: 1px solid #e8e8e8;
+            color: var(--bodyTextColor);
+        }
+
+        th {
+            font-weight: 700;
+            background-color: #f7f7f7;
+            color: var(--headerColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #terms-of-service {
+        h2 {
+            font-size: calc(32 / 16 * 1rem);
+            margin-top: calc(40 / 16 * 1rem);
+        }
+
+        .cs-key {
+            padding: calc(32 / 16 * 1rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #terms-of-service {
+            background-color: var(--dark);
+
+            h2,
+            th {
+                color: var(--bodyTextColorWhite);
+            }
+
+            p,
+            li,
+            td {
+                color: #ebebeb;
+            }
+
+            a {
+                color: var(--primaryLight);
+            }
+
+            .cs-key {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-color: rgba(255, 255, 255, 0.2);
+                border-left-color: var(--primary);
+            }
+
+            th,
+            td {
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+
+            th {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
