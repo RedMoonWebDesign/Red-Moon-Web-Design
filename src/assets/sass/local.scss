@@ -324,14 +324,16 @@
     text-align: left;
     width: 100%;
     max-width: calc(304 / 16 * 1rem);
-    padding: calc(24 / 16 * 1rem);
+    padding: calc(16 / 16 * 1rem);
     box-sizing: border-box;
     background-color: var(--accentblue);
     border-radius: calc(32 / 16 * 1rem);
+    border-top-right-radius: calc(2 / 16 * 1rem);
+    border-bottom-left-radius: calc(2 / 16 * 1rem);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: calc(24 / 16 * 1rem);
+    gap: calc(12 / 16 * 1rem);
     position: absolute;
     right: clamp(0.75rem, 1.9vw, 1.5rem);
     bottom: clamp(0.75rem, 1.9vw, 1.5rem);
@@ -355,7 +357,7 @@
 }
 
         .cs-box-icon {
-            width: calc(48 / 16 * 1rem);
+            width: calc(42 / 16 * 1rem);
             height: auto;
             display: block;
             filter: brightness(0);
