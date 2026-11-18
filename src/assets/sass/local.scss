@@ -1359,6 +1359,7 @@
             /* 12px - 24px */
             border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
             /* prevents padding from adding to height and width */
+            border: 1px solid rgba(0, 0, 0, 0.527);
             box-sizing: border-box;
             /* clips the pseudo box from overflowing */
             overflow: hidden;
@@ -1375,7 +1376,11 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: var(--medium);
+                background: var(--medium
+                );
+                border: 1px solid white;
+                 /* 12px - 24px */
+            border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
                 opacity: 0.1;                                       
                 position: absolute;
                 display: block;
@@ -1425,7 +1430,7 @@
             margin: 0;
             border-radius: 50%;
             box-sizing: border-box;
-            border: 2px solid #fff;
+            border: 2px solid #fafafa;
             /* clips image corners to make circle */
             overflow: hidden;
             position: relative;
