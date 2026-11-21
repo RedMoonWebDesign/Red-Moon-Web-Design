@@ -1,0 +1,115 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// LOCATION PAGE STYLES
+// Only used by town pages (web-design-*-texas). The homepage does not load this.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/*-- -------------------------- -->
+<---       Nearby Areas         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #nearby-areas {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(584 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* 32px - 48px */
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            max-width: 26ch;
+        }
+
+        .cs-area-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .cs-area-link {
+            font-size: calc(16 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-decoration: none;
+            padding: calc(14 / 16 * 1rem) calc(16 / 16 * 1rem);
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            border: 1px solid #e8e8e8;
+            border-radius: calc(16 / 16 * 1rem);
+            color: var(--headerColor);
+            display: block;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+            &:hover,
+            &:focus-visible {
+                background-color: var(--primary);
+                border-color: var(--primary);
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #nearby-areas {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+        }
+
+        .cs-area-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #nearby-areas {
+            .cs-topper {
+                color: var(--primary);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-area-link {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-color: rgba(231, 224, 224, 0.973);
+                color: var(--bodyTextColorWhite);
+
+                &:hover,
+                &:focus-visible {
+                    background-color: var(--primary);
+                    border-color: var(--primary);
+                }
+            }
+        }
+    }
+}
